@@ -14,7 +14,7 @@
 
 3. Abrir no Visual Studio 2019 `Backend\src\Almocao.sln`
 
-4. Acessar as propriedades da solução e selecionar "Único Projeto de Inicializada" = `Almocao.API`
+4. Acessar as propriedades da solução e selecionar "Único Projeto de Inicialização" = `Almocao.API`
 
 5. Editar o arquivo `Backend\src\Almocao.API\appsettings.json` e configurar o `ConnectionStrings.AlmocaoDbBase` com os dados de conexão com o SQL Server.
 
