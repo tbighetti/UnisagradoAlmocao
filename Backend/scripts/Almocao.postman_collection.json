@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "5a36b863-a908-46e8-b41a-6e997e298200",
+		"name": "Projeto Almoçao",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "aluno/autenticar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44355/api/aluno/autenticar?usuario=thiago&senha=123",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44355",
+					"path": [
+						"api",
+						"aluno",
+						"autenticar"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "thiago"
+						},
+						{
+							"key": "senha",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "voto/status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44355/api/voto/status?usuario=thiago&senha=123",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44355",
+					"path": [
+						"api",
+						"voto",
+						"status"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "thiago"
+						},
+						{
+							"key": "senha",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "voto/confirmar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44355/api/voto/confirmar?usuario=thiago&senha=123&restauranteId=3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44355",
+					"path": [
+						"api",
+						"voto",
+						"confirmar"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "thiago"
+						},
+						{
+							"key": "senha",
+							"value": "123"
+						},
+						{
+							"key": "restauranteId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
