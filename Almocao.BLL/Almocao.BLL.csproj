@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Almocao.BLL.Infra\Almocao.BLL.Infra.csproj" />
+    <ProjectReference Include="..\Almocao.DAL.Infra\Almocao.DAL.Infra.csproj" />
+    <ProjectReference Include="..\Almocao.Helpers\Almocao.Helpers.csproj" />
+  </ItemGroup>
+
+</Project>
