@@ -18,4 +18,10 @@
 
 5. Editar o arquivo `Backend\src\Almocao.API\appsettings.json` e configurar o `ConnectionStrings.AlmocaoDbBase` com os dados de conexão com o SQL Server.
 
+6. Para acessar a documentação da API, acesse `https://[endereço da aplicação]/swagger/index.html`
+
+![](Screenshot/swagger.png?raw=true)
+
 ### Frontend
+
+![](Screenshot/almocao_login.jpeg?raw=true)
