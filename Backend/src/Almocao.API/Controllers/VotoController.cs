@@ -23,13 +23,13 @@ namespace Almocao.API.Controllers
         }
 
         [Route("status"), HttpGet]
-        public IActionResult Status(string usuario, string senha)
+        public IActionResult Status([FromBody] LoginDTO login)
         {
             var responseContent = new ResponseContent();
 
             try
             {
-                responseContent.Object =  _votoBLL.Status(usuario, senha);
+                responseContent.Object =  _votoBLL.Status(login.Usuario, login.Senha);
 
                 if (responseContent.Object == null)
                 {
@@ -53,13 +53,13 @@ namespace Almocao.API.Controllers
         }
 
         [Route("confirmar"), HttpPost]
-        public async Task<IActionResult> Confirmar(string usuario, string senha, int restauranteId)
+        public async Task<IActionResult> Confirmar([FromBody] VotoConfirmadoDTO votoConfirmadoDTO)
         {
             var responseContent = new ResponseContent();
 
             try
             {
-                await _votoBLL.ConfirmarAsync(usuario, senha, restauranteId);
+                await _votoBLL.ConfirmarAsync(votoConfirmadoDTO.Usuario, votoConfirmadoDTO.Senha, votoConfirmadoDTO.RestauranteId);
                 responseContent.Message = "Operação realizada com sucesso";
                 return Ok(responseContent);
             }

@@ -23,15 +23,13 @@ namespace Almocao.API.Controllers
         }
 
         [Route("autenticar"), HttpPut]
-        //public async Task<IActionResult> Autenticar([FromBody] LoginDTO login)
-        public async Task<IActionResult> Autenticar(string usuario, string senha)
+        public async Task<IActionResult> Autenticar([FromBody] LoginDTO login)
         {
             var responseContent = new ResponseContent();
 
             try
             {
-                //responseContent.Object = await _alunoBLL.AutenticarAsync(login.Usuario, login.Senha);
-                responseContent.Object = await _alunoBLL.AutenticarAsync(usuario, senha);
+                responseContent.Object = await _alunoBLL.AutenticarAsync(login.Usuario, login.Senha);
 
                 if (responseContent.Object == null)
                 {

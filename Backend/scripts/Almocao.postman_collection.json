@@ -18,13 +18,13 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\r\n    \"Usuario\": \"thiago\",\r\n    \"Senha\": \"123\"\r\n}",
 					"options": {
 						"raw": {}
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44355/api/aluno/autenticar?usuario=thiago&senha=123",
+					"raw": "https://localhost:44355/api/aluno/autenticar",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -34,16 +34,6 @@
 						"api",
 						"aluno",
 						"autenticar"
-					],
-					"query": [
-						{
-							"key": "usuario",
-							"value": "thiago"
-						},
-						{
-							"key": "senha",
-							"value": "123"
-						}
 					]
 				}
 			},
@@ -51,11 +41,23 @@
 		},
 		{
 			"name": "voto/status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Usuario\": \"thiago\",\r\n    \"Senha\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "https://localhost:44355/api/voto/status?usuario=thiago&senha=123",
+					"raw": "https://localhost:44355/api/voto/status",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -65,16 +67,6 @@
 						"api",
 						"voto",
 						"status"
-					],
-					"query": [
-						{
-							"key": "usuario",
-							"value": "thiago"
-						},
-						{
-							"key": "senha",
-							"value": "123"
-						}
 					]
 				}
 			},
@@ -93,13 +85,13 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\r\n    \"Usuario\": \"thiago\",\r\n    \"Senha\": \"123\",\r\n    \"RestauranteId\": 3\r\n}",
 					"options": {
 						"raw": {}
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44355/api/voto/confirmar?usuario=thiago&senha=123&restauranteId=3",
+					"raw": "https://localhost:44355/api/voto/confirmar",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -109,20 +101,6 @@
 						"api",
 						"voto",
 						"confirmar"
-					],
-					"query": [
-						{
-							"key": "usuario",
-							"value": "thiago"
-						},
-						{
-							"key": "senha",
-							"value": "123"
-						},
-						{
-							"key": "restauranteId",
-							"value": "3"
-						}
 					]
 				}
 			},
