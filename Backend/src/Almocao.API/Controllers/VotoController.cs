@@ -23,13 +23,13 @@ namespace Almocao.API.Controllers
         }
 
         [Route("status"), HttpGet]
-        public IActionResult Status([FromBody] LoginDTO login)
+        public IActionResult Status(string usuario, string senha)
         {
             var responseContent = new ResponseContent();
 
             try
             {
-                responseContent.Object =  _votoBLL.Status(login.Usuario, login.Senha);
+                responseContent.Object =  _votoBLL.Status(usuario, senha);
 
                 if (responseContent.Object == null)
                 {
